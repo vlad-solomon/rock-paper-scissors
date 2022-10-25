@@ -1,0 +1,14 @@
+.game-over {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 40px;
+	span {
+		text-transform: uppercase;
+		font-size: 56px;
+		font-weight: 700;
+		color: var(--white);
+		text-align: center;
+		margin-bottom: 15px;
+	}
+}

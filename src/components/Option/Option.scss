@@ -1,0 +1,32 @@
+.option {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	height: 130px;
+	width: 130px;
+	background-color: var(--white);
+	border-radius: 100%;
+	border-width: 15px;
+	border-style: solid;
+	cursor: pointer;
+	margin: 0 -20px;
+	&:hover {
+		transform: scale(1.1);
+	}
+	&:nth-of-type(2) {
+		margin-top: 140px;
+	}
+	&.rock {
+		border-color: var(--rock);
+		box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.08), 0 4px 0 var(--rock-dark);
+	}
+	&.paper {
+		border-color: var(--paper);
+		box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.08), 0 4px 0 var(--paper-dark);
+	}
+	&.scissors {
+		border-color: var(--scissors);
+		box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.08), 0 4px 0 var(--scissors-dark);
+	}
+}

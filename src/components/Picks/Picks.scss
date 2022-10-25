@@ -1,0 +1,32 @@
+.picks {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	// outline: 1px solid red;
+	padding: 15px 17px 0 17px;
+	.pick {
+		width: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		// outline: 1px dashed green;
+		&__placeholder {
+			pointer-events: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100px;
+			width: 100px;
+			background-color: rgba(0, 0, 0, 0.2);
+			border-radius: 100%;
+		}
+		span {
+			color: var(--white);
+			font-size: 16px;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+			margin-top: 40px;
+			white-space: nowrap;
+		}
+	}
+}

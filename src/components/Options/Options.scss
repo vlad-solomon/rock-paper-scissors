@@ -1,0 +1,11 @@
+.options {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	#triangle {
+		position: absolute;
+		z-index: -1;
+		width: 190px;
+		top: 60px;
+	}
+}

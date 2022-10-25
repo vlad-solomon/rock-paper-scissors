@@ -1,0 +1,15 @@
+.button {
+	display: inline-block;
+	font-size: 16px;
+	letter-spacing: 0.18em;
+	color: var(--white);
+	border: 1px solid var(--white);
+	border-radius: var(--border-radius);
+	text-transform: uppercase;
+	padding: 10px 40px;
+	cursor: pointer;
+	&.fill {
+		background-color: var(--white);
+		color: var(--blue);
+	}
+}
