@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useRef } from "react";
 import "./Rules.scss";
 
 import rules from "./Rules.svg";
@@ -8,12 +8,19 @@ import GameContext from "../../context/GameContext";
 
 function Rules() {
 	const { setIsShowing } = useContext(GameContext);
+
+	const rulesRef = useRef();
+
+	useEffect(() => {
+		rulesRef.current.focus();
+	}, []);
+
 	return (
-		<div className="rules">
+		<div className="rules" ref={rulesRef} tabIndex={0} onBlur={() => setIsShowing(false)}>
 			<div className="rules__container">
 				<span>rules</span>
-				<img src={rules} alt="rules" />
-				<img src={closeRules} alt="close-rules" onClick={() => setIsShowing(false)} style={{ cursor: "pointer" }} />
+				<img src={rules} id="rules" alt="rules" />
+				<img src={closeRules} id="close-rules" alt="close-rules" onClick={() => setIsShowing(false)} style={{ cursor: "pointer" }} />
 			</div>
 		</div>
 	);

@@ -11,5 +11,8 @@
 	&.fill {
 		background-color: var(--white);
 		color: var(--blue);
+		&:hover {
+			color: var(--rock);
+		}
 	}
 }

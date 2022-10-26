@@ -4,6 +4,9 @@
 	justify-content: space-between;
 	// outline: 1px solid red;
 	padding: 15px 17px 0 17px;
+	.game-over {
+		display: none;
+	}
 	.pick {
 		width: 100px;
 		display: flex;

@@ -1,0 +1,93 @@
+@media (min-width: 1050px) {
+	.App {
+		max-width: 700px;
+	}
+	.header {
+		padding: 20px 30px;
+		border-radius: var(--border-radius-big);
+		img {
+			height: 92px;
+		}
+		&__score {
+			height: 114px;
+			width: 150px;
+			span {
+				font-size: 16px;
+			}
+			&-value {
+				font-size: 64px;
+			}
+		}
+	}
+	.footer {
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+		left: unset;
+		width: unset;
+		.game-over {
+			display: none;
+		}
+	}
+	.rules {
+		height: 415px;
+		width: 400px;
+		border-radius: var(--border-radius);
+		box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
+		&__container {
+			position: relative;
+			padding: 30px;
+			max-width: 100%;
+			align-items: flex-start;
+			#rules {
+				align-self: center;
+			}
+			#close-rules {
+				position: absolute;
+				top: 40px;
+				right: 30px;
+			}
+		}
+	}
+	.options {
+		#triangle {
+			width: unset;
+			top: 90px;
+		}
+	}
+	.option {
+		height: 200px;
+		width: 200px;
+		border-width: 25px;
+		img {
+			height: 50%;
+		}
+		&:nth-of-type(2) {
+			margin-top: 220px;
+		}
+	}
+	.picks {
+		padding: 0;
+		justify-content: center;
+		.pick {
+			flex-direction: column-reverse;
+			span {
+				margin-top: unset;
+				margin-bottom: 140px;
+				font-size: 26px;
+			}
+			&__placeholder {
+				.option {
+					height: 290px;
+					width: 290px;
+					border-width: 34px;
+				}
+			}
+		}
+		.game-over {
+			display: flex;
+			margin: 60px 180px 0 180px;
+			flex-shrink: 0;
+		}
+	}
+}
